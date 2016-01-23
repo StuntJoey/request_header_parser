@@ -1,0 +1,32 @@
+{
+  "name": "request_header_parser",
+  "version": "0.0.0",
+  "engine": {"node": "~4.5.0"},
+  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StuntJoey/request_header_parser.git"
+  },
+  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "socket.io": "~0.9.14"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "freecodecamp",
+    "request",
+    "header",
+    "parser"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StuntJoey/request_header_parser/issues"
+  },
+  "homepage": "https://github.com/StuntJoey/request_header_parser#readme"
+}
