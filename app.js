@@ -1,17 +1,15 @@
 
-var http = require('http'),
-    os   = require('os'),
-    port = process.env.PORT || 8080;
-//var express = require('express');
-//var os = require('os');
+'use strict';
 
-//var app = express();
+var express    = require('express');        
+var app        = express();                
+var details    = require('./app/controllers/details.js');
+    
+    
+app.get('/', details.info);
 
 
-http.createServer(function(req, res){ 
-   res.write(req.connection.remoteAddress);
-   res.write(os.platform());
-   res.end();
-}).listen(8080, function(){
-  console.log("Server listening at 8080");
+var port = process.env.PORT || 8080; 
+app.listen(port, function() {
+    console.log('Node.js listening on port ' + port);
 });
